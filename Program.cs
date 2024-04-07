@@ -2,6 +2,8 @@
 using System.Text.Json;
 using ScreenSound_04.Filtros;
 
+// Hello world do passado :o
+// Finalizado em 06/04/2024
 
 using (HttpClient client = new HttpClient())
 {
@@ -13,7 +15,7 @@ using (HttpClient client = new HttpClient())
         //LinqOrder.ExbirListaDeArtistaOrdenados(musicas);
         //LinqFilter.FiltrarArtistaPorGeneroMusical(musicas, "set()");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Michel Teló");
-        musicas[1].ExibirDetalhesDaMusica();
+
 
         //var musicasPreferidasDoAugusto = new MusicasPreferidas("Augusto");
         //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[1]);
@@ -24,6 +26,11 @@ using (HttpClient client = new HttpClient())
 
         //musicasPreferidasDoAugusto.ExibirMusicasFavoritas();
         //musicasPreferidasDoAugusto.GerarArquivoJson();
+
+        //musicas[1].ExibirDetalhesDaMusica();
+        LinqFilter.FiltrarMusicasEmCSharp(musicas);
+
+
     }
     catch (Exception ex)
     {
