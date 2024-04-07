@@ -13,16 +13,17 @@ using (HttpClient client = new HttpClient())
         //LinqOrder.ExbirListaDeArtistaOrdenados(musicas);
         //LinqFilter.FiltrarArtistaPorGeneroMusical(musicas, "set()");
         //LinqFilter.FiltrarMusicasDeUmArtista(musicas, "Michel Teló");
+        musicas[1].ExibirDetalhesDaMusica();
 
-        var musicasPreferidasDoAugusto = new MusicasPreferidas("Augusto");
-        musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[1]);
-        musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[377]);
-        musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[4]);
-        musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[6]);
-        musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[1467]);
+        //var musicasPreferidasDoAugusto = new MusicasPreferidas("Augusto");
+        //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[1]);
+        //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[377]);
+        //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[4]);
+        //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[6]);
+        //musicasPreferidasDoAugusto.AdicionarMusicaFavoritas(musicas[1467]);
 
-        musicasPreferidasDoAugusto.ExibirMusicasFavoritas();
-        musicasPreferidasDoAugusto.GerarArquivoJson();
+        //musicasPreferidasDoAugusto.ExibirMusicasFavoritas();
+        //musicasPreferidasDoAugusto.GerarArquivoJson();
     }
     catch (Exception ex)
     {
